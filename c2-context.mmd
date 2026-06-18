@@ -1,0 +1,20 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    Users["Usuários"] --> Frontend["Frontend<br>(HTML, CSS, JavaScript)"]
+    Frontend --> BackendAPI["Backend<br>(C# ASP.NET Core)"]
+    BackendAPI --> MySQL[("MySQL")] & MongoDB[("MongoDB")] & Redis[("Redis")]
+
+    Users@{ shape: rounded}
+     Users:::userLayer
+     Frontend:::appLayer
+     BackendAPI:::apiLayer
+     MySQL:::dataLayer
+     MongoDB:::dataLayer
+     Redis:::dataLayer
+    classDef userLayer stroke #818cf8, fill #eef2ff
+    classDef appLayer stroke #38bdf8, fill #f0f9ff
+    classDef apiLayer stroke #fb923c, fill #fff7ed
+    classDef dataLayer stroke #4ade80, fill #f0fdf4
