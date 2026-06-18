@@ -1,0 +1,22 @@
+graph TD
+
+A[Auth Controller]
+B[User Service]
+C[List Service]
+D[Product Service]
+E[Share Service]
+F[Repository Layer]
+
+G[(MySQL)]
+H[(MongoDB)]
+I[(Redis)]
+
+A --> F
+B --> F
+C --> F
+D --> F
+E --> F
+
+F --> G
+F --> H
+F --> I
