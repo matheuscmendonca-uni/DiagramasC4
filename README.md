@@ -1,8 +1,6 @@
 # DiagramasC4
 
-# Projeto Integrador - Compraí
-
-## Diagramas C4
+## Projeto Integrador - Compraí
 
 Os diagramas foram desenvolvidos utilizando Mermaid, seguindo a abordagem Diagrams as Code solicitada na atividade.
 
